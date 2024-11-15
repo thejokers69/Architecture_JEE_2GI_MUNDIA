@@ -15,6 +15,6 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 
     List<Product> findByPriceGreaterThan(double nbr);
 
-    @Query("select prd from Product prd where prd.price > :nbr");
-    List<Product> searchGreather (@Param(("nbr")double nbr));
+    @Query("select prd from Product prd where prd.price > :nbr")
+    List<Product> searchGreather(@Param("nbr") double nbr);
 }

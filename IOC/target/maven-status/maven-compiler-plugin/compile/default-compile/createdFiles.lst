@@ -1,0 +1,9 @@
+dao/DaoImpl.class
+metier/MetierImpl.class
+pres/Pres2.class
+pres/Pres4.class
+dao/IDao.class
+pres/Pres1.class
+metier/IMetier.class
+pres/Pres3.class
+ext/DaoImplV2.class

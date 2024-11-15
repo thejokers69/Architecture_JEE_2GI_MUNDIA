@@ -1,0 +1,44 @@
+.
+|-- mvnw
+|-- mvnw.cmd
+|-- pom.xml
+|-- project_structure.txt
+|-- src
+|   |-- main
+|   |   |-- java
+|   |   |   `-- ma
+|   |   |       `-- mundiapolis
+|   |   |           `-- tp3_hospital
+|   |   |               |-- Tp3HospitalApplication.java
+|   |   |               |-- Web
+|   |   |               |   `-- PatientController.java
+|   |   |               |-- entities
+|   |   |               |   `-- Patient.java
+|   |   |               `-- repositories
+|   |   |                   `-- PatientRepository.java
+|   |   `-- resources
+|   |       |-- application.properties
+|   |       |-- static
+|   |       `-- templates
+|   |           `-- patients.html
+|   `-- test
+|       `-- java
+|           `-- ma
+|               `-- mundiapolis
+|                   `-- tp3_hospital
+|                       `-- Tp3HospitalApplicationTests.java
+`-- target
+    |-- classes
+    |   |-- application.properties
+    |   |-- ma
+    |   |   `-- mundiapolis
+    |   |       `-- tp3_hospital
+    |   |           |-- Tp3HospitalApplication.class
+    |   |           `-- repositories
+    |   |               `-- PatientRepository.class
+    |   `-- templates
+    |       `-- patients.html
+    `-- generated-sources
+        `-- annotations
+
+27 directories, 15 files

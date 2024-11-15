@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundiapolis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+<div class="container mx-auto p-4">
+
+    <!-- Formulaire de recherche -->
+    <form method="get" th:action="@{patients}">
+        <label class="block w-full text-gray-700 font-semibold mb-2">Search for a patient</label>
+        <input
+                type="text"
+                name="word"
+                th:value="${word}"
+                placeholder="Enter patient name"
+                class="w-[600px] p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+        >
+        <button
+                type="submit"
+                class="w-[300px] bg-gray-800 text-white font-semibold py-2 px-2 rounded-lg hover:bg-gray-900 transition duration-300"
+        >
+            Search
+        </button>
+    </form>
+
+    <!-- Bouton Add Patient -->
+    <div class="flex justify-end mb-4">
+        <a href="/patients/add"
+           class="bg-green-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300">
+            Add Patient
+        </a>
+    </div>
+
+    <h1 class="text-3xl font-bold mb-4">List of Patients</h1>
+
+    <!-- Tableau des patients -->
+    <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
+        <thead class="bg-gray-200">
+        <tr>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">ID</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Full Name</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Birthday</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Sick</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Score</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Gender</th>
+            <th class="py-2 px-4 border-b border-gray-300 text-left">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p : ${allPatients}" class="hover:bg-gray-100 pt-2 pb-2 transition duration-200">
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.id}"></td>
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.name}"></td>
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.birthDate}"></td>
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.sick}"></td>
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.score}"></td>
+            <td class="py-2 px-4 border-b border-gray-300" th:text="${p.gender}"></td>
+            <td class="py-2 px-4 border-b border-gray-300">
+                <a th:href="@{/patients/edit/{id}(id=${p.id})}"
+                   class="py-2 px-1 mr-2 rounded-md bg-blue-500 text-white">
+                    Edit
+                </a>
+                <a th:href="@{/patients/delete(id=${p.id}, word=${word}, page=${currentPage})}"
+                   onclick="return confirm('Are you sure you want to delete this patient?');"
+                   class="py-2 px-1 rounded-md bg-red-500 text-white">
+                    Delete
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <ul class="flex justify-center space-x-2 mt-4">
+        <li th:each="page, status : ${pages}" class="page-item cursor-pointer">
+            <a th:classappend="${status.index == currentPage ? 'bg-gray-800 text-white' : 'text-gray-700 hover:bg-gray-800 hover:text-white'}"
+               class="block px-4 py-2 border border-gray-700 rounded transition duration-300"
+               th:text="${status.index + 1}"
+               th:href="@{/patients(page=${status.index}, word=${word})}">
+            </a>
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

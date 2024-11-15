@@ -1,0 +1,61 @@
+.
+├── config.txt
+├── pom.xml
+├── project_structure.txt
+├── qodana.yaml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── dao
+│   │   │   │   ├── DaoImpl.java
+│   │   │   │   └── IDao.java
+│   │   │   ├── ext
+│   │   │   │   └── DaoImplV2.java
+│   │   │   ├── metier
+│   │   │   │   ├── IMetier.java
+│   │   │   │   └── MetierImpl.java
+│   │   │   └── pres
+│   │   │       ├── Pres1.java
+│   │   │       ├── Pres2.java
+│   │   │       ├── Pres3.java
+│   │   │       └── Pres4.java
+│   │   └── resources
+│   │       └── spring-config.xml
+│   └── test
+│       └── java
+└── target
+    ├── IOC-1.0-SNAPSHOT.jar
+    ├── classes
+    │   ├── dao
+    │   │   ├── DaoImpl.class
+    │   │   └── IDao.class
+    │   ├── ext
+    │   │   └── DaoImplV2.class
+    │   ├── metier
+    │   │   ├── IMetier.class
+    │   │   └── MetierImpl.class
+    │   ├── pres
+    │   │   ├── Pres1.class
+    │   │   ├── Pres2.class
+    │   │   ├── Pres3.class
+    │   │   └── Pres4.class
+    │   └── spring-config.xml
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    ├── maven-archiver
+    │   └── pom.properties
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       ├── createdFiles.lst
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    └── test-classes
+
+29 directories, 30 files

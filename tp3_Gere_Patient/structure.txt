@@ -1,0 +1,50 @@
+.
+├── HELP.md
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── ma
+│   │   │       └── mundiapolis
+│   │   │           └── tp3_gere_patient
+│   │   │               ├── Tp3GerePatientApplication.java
+│   │   │               ├── entities
+│   │   │               │   └── Patient.java
+│   │   │               ├── repositories
+│   │   │               │   └── PatientRepository.java
+│   │   │               ├── services
+│   │   │               │   └── PatientService.java
+│   │   │               └── web
+│   │   │                   └── PatientController.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       └── templates
+│   │           ├── add_patient.html
+│   │           └── patients.html
+│   └── test
+│       └── java
+│           └── ma
+│               └── mundiapolis
+│                   └── tp3_gere_patient
+│                       └── Tp3GerePatientApplicationTests.java
+├── structure.txt
+└── target
+    ├── classes
+    │   ├── application.properties
+    │   └── templates
+    │       ├── add_patient.html
+    │       └── patients.html
+    ├── generated-sources
+    │   └── annotations
+    └── maven-status
+        └── maven-compiler-plugin
+            └── compile
+                └── default-compile
+                    ├── createdFiles.lst
+                    └── inputFiles.lst
+
+28 directories, 20 files

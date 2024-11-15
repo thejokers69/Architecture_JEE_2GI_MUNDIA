@@ -1,0 +1,9 @@
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_gere_patient/Tp3GerePatientApplication.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_gere_patient/entities/Patient.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_gere_patient/repositories/PatientRepository.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_gere_patient/services/PatientService.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_gere_patient/web/PatientController.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_hospital/Tp3HospitalApplication.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_hospital/Web/PatientController.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_hospital/entities/Patient.java
+/Users/thejoker/IdeaProjects/tp3_Gere_Patient/src/main/java/ma/mundiapolis/tp3_hospital/repositories/PatientRepository.java

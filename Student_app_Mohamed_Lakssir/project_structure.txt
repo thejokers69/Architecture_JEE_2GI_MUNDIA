@@ -1,0 +1,36 @@
+.
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── project_structure.txt
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── org
+│   │   │       └── example
+│   │   │           └── student_app_mohamed_lakssir
+│   │   │               ├── StudentAppMohamedLakssirApplication.java
+│   │   │               └── entities
+│   │   │                   └── Product.java
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── org
+│               └── example
+│                   └── student_app_mohamed_lakssir
+│                       └── StudentAppMohamedLakssirApplicationTests.java
+└── target
+    ├── classes
+    │   ├── application.properties
+    │   └── org
+    │       └── example
+    │           └── student_app_mohamed_lakssir
+    │               ├── StudentAppMohamedLakssirApplication.class
+    │               └── entities
+    │                   ├── Product$ProductBuilder.class
+    │                   └── Product.class
+    └── generated-sources
+        └── annotations
+
+22 directories, 12 files

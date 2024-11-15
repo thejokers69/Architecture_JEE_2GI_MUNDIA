@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="TP3_Hospital" />
+        <module name="tp3_Gere_Patient" />
+        <module name="Student_app_Mohamed_Lakssir" />
+        <module name="IOC" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="IOC" options="-Xlint:unchecked" />
+      <module name="Student_app_Mohamed_Lakssir" options="-parameters" />
+      <module name="TP3_Hospital" options="-parameters" />
+      <module name="tp3_Gere_Patient" options="-parameters" />
+    </option>
+  </component>
+</project>

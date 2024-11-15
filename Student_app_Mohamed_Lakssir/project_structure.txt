@@ -10,8 +10,12 @@
 │   │   │       └── example
 │   │   │           └── student_app_mohamed_lakssir
 │   │   │               ├── StudentAppMohamedLakssirApplication.java
-│   │   │               └── entities
-│   │   │                   └── Product.java
+│   │   │               ├── entities
+│   │   │               │   └── Product.java
+│   │   │               ├── repository
+│   │   │               │   └── ProductRepository.java
+│   │   │               └── web
+│   │   │                   └── ProductRestService.java
 │   │   └── resources
 │   │       └── application.properties
 │   └── test
@@ -27,10 +31,15 @@
     │       └── example
     │           └── student_app_mohamed_lakssir
     │               ├── StudentAppMohamedLakssirApplication.class
-    │               └── entities
-    │                   ├── Product$ProductBuilder.class
-    │                   └── Product.class
-    └── generated-sources
-        └── annotations
+    │               ├── entities
+    │               │   ├── Product$ProductBuilder.class
+    │               │   └── Product.class
+    │               └── repository
+    │                   └── ProductRepository.class
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    └── test-classes
 
-22 directories, 12 files
+28 directories, 15 files

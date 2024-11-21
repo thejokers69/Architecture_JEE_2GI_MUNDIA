@@ -1,3 +1,4 @@
+// Architecture_JEE_2GI_MUNDIA/Student_app_Mohamed_Lakssir/src/main/java/org/example/student_app_mohamed_lakssir/web/ProductRestService.java
 package ma.mundiapolis.tp3_hospital.repositories;
 
 import ma.mundiapolis.tp3_hospital.entities.Patient;

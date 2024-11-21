@@ -1,0 +1,220 @@
+.
+├── IOC
+│   ├── README.md
+│   ├── config.txt
+│   ├── pom.xml
+│   ├── project_structure.txt
+│   ├── qodana.yaml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   ├── dao
+│   │   │   │   │   ├── DaoImpl.java
+│   │   │   │   │   └── IDao.java
+│   │   │   │   ├── ext
+│   │   │   │   │   └── DaoImplV2.java
+│   │   │   │   ├── metier
+│   │   │   │   │   ├── IMetier.java
+│   │   │   │   │   └── MetierImpl.java
+│   │   │   │   └── pres
+│   │   │   │       ├── Pres1.java
+│   │   │   │       ├── Pres2.java
+│   │   │   │       ├── Pres3.java
+│   │   │   │       └── Pres4.java
+│   │   │   └── resources
+│   │   │       └── spring-config.xml
+│   │   └── test
+│   │       └── java
+│   └── target
+│       ├── IOC-1.0-SNAPSHOT.jar
+│       ├── classes
+│       │   ├── dao
+│       │   │   ├── DaoImpl.class
+│       │   │   └── IDao.class
+│       │   ├── ext
+│       │   │   └── DaoImplV2.class
+│       │   ├── metier
+│       │   │   ├── IMetier.class
+│       │   │   └── MetierImpl.class
+│       │   ├── pres
+│       │   │   ├── Pres1.class
+│       │   │   ├── Pres2.class
+│       │   │   ├── Pres3.class
+│       │   │   └── Pres4.class
+│       │   └── spring-config.xml
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       ├── maven-archiver
+│       │   └── pom.properties
+│       ├── maven-status
+│       │   └── maven-compiler-plugin
+│       │       ├── compile
+│       │       │   └── default-compile
+│       │       │       ├── createdFiles.lst
+│       │       │       └── inputFiles.lst
+│       │       └── testCompile
+│       │           └── default-testCompile
+│       │               ├── createdFiles.lst
+│       │               └── inputFiles.lst
+│       └── test-classes
+├── README.md
+├── Student_app_Mohamed_Lakssir
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── project_structure.txt
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── org
+│   │   │   │       └── example
+│   │   │   │           └── student_app_mohamed_lakssir
+│   │   │   │               ├── StudentAppMohamedLakssirApplication.java
+│   │   │   │               ├── entities
+│   │   │   │               │   └── Product.java
+│   │   │   │               ├── repository
+│   │   │   │               │   └── ProductRepository.java
+│   │   │   │               └── web
+│   │   │   │                   └── ProductRestService.java
+│   │   │   └── resources
+│   │   │       └── application.properties
+│   │   └── test
+│   │       └── java
+│   │           └── org
+│   │               └── example
+│   │                   └── student_app_mohamed_lakssir
+│   │                       └── StudentAppMohamedLakssirApplicationTests.java
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   └── org
+│       │       └── example
+│       │           └── student_app_mohamed_lakssir
+│       │               ├── StudentAppMohamedLakssirApplication.class
+│       │               ├── entities
+│       │               │   ├── Product$ProductBuilder.class
+│       │               │   └── Product.class
+│       │               └── repository
+│       │                   └── ProductRepository.class
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       └── test-classes
+├── TP3_Hospital
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── project_structure.txt
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── ma
+│   │   │   │       └── mundiapolis
+│   │   │   │           └── tp3_hospital
+│   │   │   │               ├── Tp3HospitalApplication.java
+│   │   │   │               ├── Web
+│   │   │   │               │   └── PatientController.java
+│   │   │   │               ├── entities
+│   │   │   │               │   ├── Consultation.java
+│   │   │   │               │   ├── Medecin.java
+│   │   │   │               │   └── Patient.java
+│   │   │   │               ├── repositories
+│   │   │   │               │   ├── ConsultationRepository.java
+│   │   │   │               │   └── PatientRepository.java
+│   │   │   │               └── services
+│   │   │   │                   └── PatientService.java
+│   │   │   └── resources
+│   │   │       ├── application.properties
+│   │   │       ├── static
+│   │   │       └── templates
+│   │   │           └── patients.html
+│   │   └── test
+│   │       └── java
+│   │           └── ma
+│   │               └── mundiapolis
+│   │                   └── tp3_hospital
+│   │                       └── Tp3HospitalApplicationTests.java
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   └── templates
+│       │       └── patients.html
+│       └── generated-sources
+│           └── annotations
+├── project_structure.txt
+└── tp3_Gere_Patient
+    ├── Image
+    │   ├── Add_Patient.png
+    │   ├── Edit_Patient.png
+    │   └── List_Of_Patients.png
+    ├── README.md
+    ├── mvnw
+    ├── mvnw.cmd
+    ├── pom.xml
+    ├── src
+    │   ├── main
+    │   │   ├── java
+    │   │   │   └── ma
+    │   │   │       └── mundiapolis
+    │   │   │           └── tp3_gere_patient
+    │   │   │               ├── Tp3GerePatientApplication.java
+    │   │   │               ├── entities
+    │   │   │               │   └── Patient.java
+    │   │   │               ├── repositories
+    │   │   │               │   └── PatientRepository.java
+    │   │   │               ├── services
+    │   │   │               │   └── PatientService.java
+    │   │   │               └── web
+    │   │   │                   └── PatientController.java
+    │   │   └── resources
+    │   │       ├── application.properties
+    │   │       └── templates
+    │   │           ├── add_patient.html
+    │   │           ├── edit_patient.html
+    │   │           └── patients.html
+    │   └── test
+    │       └── java
+    │           └── ma
+    │               └── mundiapolis
+    │                   └── tp3_gere_patient
+    │                       └── Tp3GerePatientApplicationTests.java
+    ├── structure.txt
+    └── target
+        ├── classes
+        │   ├── application.properties
+        │   ├── ma
+        │   │   └── mundiapolis
+        │   │       └── tp3_gere_patient
+        │   │           ├── Tp3GerePatientApplication.class
+        │   │           ├── entities
+        │   │           │   └── Patient.class
+        │   │           ├── repositories
+        │   │           │   └── PatientRepository.class
+        │   │           ├── services
+        │   │           │   └── PatientService.class
+        │   │           └── web
+        │   │               └── PatientController.class
+        │   └── templates
+        │       ├── add_patient.html
+        │       ├── edit_patient.html
+        │       └── patients.html
+        ├── generated-sources
+        │   └── annotations
+        ├── generated-test-sources
+        │   └── test-annotations
+        ├── maven-status
+        │   └── maven-compiler-plugin
+        │       └── compile
+        │           └── default-compile
+        │               ├── createdFiles.lst
+        │               └── inputFiles.lst
+        └── test-classes
+            └── ma
+                └── mundiapolis
+                    └── tp3_gere_patient
+                        └── Tp3GerePatientApplicationTests.class
+
+123 directories, 95 files

@@ -142,4 +142,4 @@ Deux utilisateurs sont définis dans la configuration SecurityConfig :
 ## Auteur
 
 - Nom : Mohamed Lakssir
-- Université : Mundiapolis - 2GI
+- Université : Mundiapolis - 2ACI Info

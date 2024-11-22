@@ -31,3 +31,58 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+*.class
+# Log files
+*.log
+# Maven
+/target/
+# Gradle
+/build/
+
+# Gradle cache
+.gradle/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+
+
+
+# Node.js (si applicable)
+node_modules/
+
+# Spring Boot specific
+*.war
+*.jar
+
+# Database files
+*.h2.db
+*.mv.db
+*.sqlite
+*.db
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Configuration temporaire
+*.properties
+*.yml
+*.yaml
+application-*.properties
+application-*.yml
+
+
+# Maven local repository
+.mvn/
+.mvnw*

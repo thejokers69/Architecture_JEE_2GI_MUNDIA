@@ -6,25 +6,23 @@
 │   ├── project_structure.txt
 │   ├── qodana.yaml
 │   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   ├── dao
-│   │   │   │   │   ├── DaoImpl.java
-│   │   │   │   │   └── IDao.java
-│   │   │   │   ├── ext
-│   │   │   │   │   └── DaoImplV2.java
-│   │   │   │   ├── metier
-│   │   │   │   │   ├── IMetier.java
-│   │   │   │   │   └── MetierImpl.java
-│   │   │   │   └── pres
-│   │   │   │       ├── Pres1.java
-│   │   │   │       ├── Pres2.java
-│   │   │   │       ├── Pres3.java
-│   │   │   │       └── Pres4.java
-│   │   │   └── resources
-│   │   │       └── spring-config.xml
-│   │   └── test
-│   │       └── java
+│   │   └── main
+│   │       ├── java
+│   │       │   ├── dao
+│   │       │   │   ├── DaoImpl.java
+│   │       │   │   └── IDao.java
+│   │       │   ├── ext
+│   │       │   │   └── DaoImplV2.java
+│   │       │   ├── metier
+│   │       │   │   ├── IMetier.java
+│   │       │   │   └── MetierImpl.java
+│   │       │   └── pres
+│   │       │       ├── Pres1.java
+│   │       │       ├── Pres2.java
+│   │       │       ├── Pres3.java
+│   │       │       └── Pres4.java
+│   │       └── resources
+│   │           └── spring-config.xml
 │   └── target
 │       ├── IOC-1.0-SNAPSHOT.jar
 │       ├── classes
@@ -44,23 +42,21 @@
 │       │   └── spring-config.xml
 │       ├── generated-sources
 │       │   └── annotations
-│       ├── generated-test-sources
-│       │   └── test-annotations
 │       ├── maven-archiver
 │       │   └── pom.properties
-│       ├── maven-status
-│       │   └── maven-compiler-plugin
-│       │       ├── compile
-│       │       │   └── default-compile
-│       │       │       ├── createdFiles.lst
-│       │       │       └── inputFiles.lst
-│       │       └── testCompile
-│       │           └── default-testCompile
-│       │               ├── createdFiles.lst
-│       │               └── inputFiles.lst
-│       └── test-classes
+│       └── maven-status
+│           └── maven-compiler-plugin
+│               ├── compile
+│               │   └── default-compile
+│               │       ├── createdFiles.lst
+│               │       └── inputFiles.lst
+│               └── testCompile
+│                   └── default-testCompile
+│                       ├── createdFiles.lst
+│                       └── inputFiles.lst
 ├── README.md
 ├── Student_app_Mohamed_Lakssir
+│   ├── README.md
 │   ├── mvnw
 │   ├── mvnw.cmd
 │   ├── pom.xml
@@ -96,13 +92,19 @@
 │       │               ├── entities
 │       │               │   ├── Product$ProductBuilder.class
 │       │               │   └── Product.class
-│       │               └── repository
-│       │                   └── ProductRepository.class
+│       │               ├── repository
+│       │               │   └── ProductRepository.class
+│       │               └── web
+│       │                   └── ProductRestService.class
 │       ├── generated-sources
 │       │   └── annotations
 │       ├── generated-test-sources
 │       │   └── test-annotations
 │       └── test-classes
+│           └── org
+│               └── example
+│                   └── student_app_mohamed_lakssir
+│                       └── StudentAppMohamedLakssirApplicationTests.class
 ├── TP3_Hospital
 │   ├── mvnw
 │   ├── mvnw.cmd
@@ -128,7 +130,6 @@
 │   │   │   │                   └── PatientService.java
 │   │   │   └── resources
 │   │   │       ├── application.properties
-│   │   │       ├── static
 │   │   │       └── templates
 │   │   │           └── patients.html
 │   │   └── test
@@ -144,6 +145,76 @@
 │       │       └── patients.html
 │       └── generated-sources
 │           └── annotations
+├── TP4_Security_patients
+│   ├── HELP.md
+│   ├── README.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── ma
+│   │   │   │       └── mundiapolis
+│   │   │   │           └── tp4_security_patients
+│   │   │   │               ├── Tp4SecurityPatientsApplication.java
+│   │   │   │               ├── entities
+│   │   │   │               │   └── Patient.java
+│   │   │   │               ├── repositories
+│   │   │   │               │   └── PatientRepository.java
+│   │   │   │               ├── security
+│   │   │   │               │   └── SecurityConfig.java
+│   │   │   │               └── web
+│   │   │   │                   ├── PatientController.java
+│   │   │   │                   └── SecurityController.java
+│   │   │   └── resources
+│   │   │       ├── application.properties
+│   │   │       ├── static
+│   │   │       └── templates
+│   │   │           ├── editPatients.html
+│   │   │           ├── formPatients.html
+│   │   │           ├── login.html
+│   │   │           ├── notAuthorized.html
+│   │   │           ├── patients.html
+│   │   │           └── template.html
+│   │   └── test
+│   │       └── java
+│   │           └── ma
+│   │               └── mundiapolis
+│   │                   └── tp4_security_patients
+│   │                       └── Tp4SecurityPatientsApplicationTests.java
+│   └── target
+│       ├── classes
+│       │   ├── application.properties
+│       │   ├── ma
+│       │   │   └── mundiapolis
+│       │   │       └── tp4_security_patients
+│       │   │           ├── Tp4SecurityPatientsApplication.class
+│       │   │           ├── entities
+│       │   │           │   └── Patient.class
+│       │   │           ├── repositories
+│       │   │           │   └── PatientRepository.class
+│       │   │           ├── security
+│       │   │           │   └── SecurityConfig.class
+│       │   │           └── web
+│       │   │               ├── PatientController.class
+│       │   │               └── SecurityController.class
+│       │   └── templates
+│       │       ├── editPatients.html
+│       │       ├── formPatients.html
+│       │       ├── login.html
+│       │       ├── notAuthorized.html
+│       │       ├── patients.html
+│       │       └── template.html
+│       ├── generated-sources
+│       │   └── annotations
+│       ├── generated-test-sources
+│       │   └── test-annotations
+│       └── test-classes
+│           └── ma
+│               └── mundiapolis
+│                   └── tp4_security_patients
+│                       └── Tp4SecurityPatientsApplicationTests.class
 ├── project_structure.txt
 └── tp3_Gere_Patient
     ├── Image
@@ -217,4 +288,4 @@
                     └── tp3_gere_patient
                         └── Tp3GerePatientApplicationTests.class
 
-123 directories, 95 files
+158 directories, 131 files

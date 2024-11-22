@@ -1,0 +1,73 @@
+.
+├── HELP.md
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── project_structure.txt
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── ma
+│   │   │       └── mundiapolis
+│   │   │           └── tp4_security_patients
+│   │   │               ├── Tp4SecurityPatientsApplication.java
+│   │   │               ├── entities
+│   │   │               │   └── Patient.java
+│   │   │               ├── repositories
+│   │   │               │   └── PatientRepository.java
+│   │   │               ├── security
+│   │   │               │   └── SecurityConfig.java
+│   │   │               └── web
+│   │   │                   ├── PatientController.java
+│   │   │                   └── SecurityController.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       └── templates
+│   │           ├── editPatients.html
+│   │           ├── formPatients.html
+│   │           ├── login.html
+│   │           ├── notAuthorized.html
+│   │           ├── patients.html
+│   │           └── template.html
+│   └── test
+│       └── java
+│           └── ma
+│               └── mundiapolis
+│                   └── tp4_security_patients
+│                       └── Tp4SecurityPatientsApplicationTests.java
+└── target
+    ├── classes
+    │   ├── application.properties
+    │   ├── ma
+    │   │   └── mundiapolis
+    │   │       └── tp4_security_patients
+    │   │           ├── Tp4SecurityPatientsApplication.class
+    │   │           ├── entities
+    │   │           │   └── Patient.class
+    │   │           ├── repositories
+    │   │           │   └── PatientRepository.class
+    │   │           ├── security
+    │   │           │   └── SecurityConfig.class
+    │   │           └── web
+    │   │               ├── PatientController.class
+    │   │               └── SecurityController.class
+    │   └── templates
+    │       ├── editPatients.html
+    │       ├── formPatients.html
+    │       ├── login.html
+    │       ├── notAuthorized.html
+    │       ├── patients.html
+    │       └── template.html
+    ├── generated-sources
+    │   └── annotations
+    ├── generated-test-sources
+    │   └── test-annotations
+    └── test-classes
+        └── ma
+            └── mundiapolis
+                └── tp4_security_patients
+                    └── Tp4SecurityPatientsApplicationTests.class
+
+37 directories, 34 files

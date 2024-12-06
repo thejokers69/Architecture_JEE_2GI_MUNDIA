@@ -13,10 +13,21 @@
         <module name="Student_app_Mohamed_Lakssir" />
         <module name="IOC" />
       </profile>
+      <profile name="Annotation profile for Digital_banking" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="Digital_banking" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Digital_banking" options="-parameters" />
       <module name="IOC" options="-Xlint:unchecked" />
       <module name="Student_app_Mohamed_Lakssir" options="-parameters" />
       <module name="TP3_Hospital" options="-parameters" />

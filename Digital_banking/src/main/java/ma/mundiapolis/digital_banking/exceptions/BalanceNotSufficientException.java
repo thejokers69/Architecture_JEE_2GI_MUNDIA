@@ -1,7 +1,7 @@
 package ma.mundiapolis.digital_banking.exceptions;
 
-public class BalanceNotSufficientExcepetion extends Exception {
-    public BalanceNotSufficientExcepetion(String message) {
+public class BalanceNotSufficientException extends Exception {
+    public BalanceNotSufficientException(String message) {
         super(message);
     }
 }

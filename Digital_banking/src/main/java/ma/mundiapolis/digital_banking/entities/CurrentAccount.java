@@ -4,10 +4,12 @@ import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 @Entity
-// @DiscriminatorValue("CA")
+@DiscriminatorValue("CA")
 @Data @AllArgsConstructor @NoArgsConstructor
-public class CurrentAccount extends  BankAccount{
+@EqualsAndHashCode(callSuper = true)
+public class CurrentAccount extends  BankAccount {
     private double overDraft;
 }

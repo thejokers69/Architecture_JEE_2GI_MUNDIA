@@ -1,6 +1,9 @@
 package ma.mundiapolis.digital_banking.services;
 
+<<<<<<< HEAD
 import jakarta.transaction.Transactional;
+=======
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import ma.mundiapolis.digital_banking.dtos.*;
@@ -16,18 +19,29 @@ import ma.mundiapolis.digital_banking.repositories.CustomerRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+<<<<<<< HEAD
+=======
+import org.springframework.transaction.annotation.Transactional;
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
 
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+<<<<<<< HEAD
 import java.util.stream.Collector;
+=======
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
 import java.util.stream.Collectors;
 
 @Service
 @Transactional
 @AllArgsConstructor
 @Slf4j
+<<<<<<< HEAD
 public class BankAccountServiceImpl implements BankAccountService{
+=======
+public class BankAccountServiceImpl implements BankAccountService {
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
     private CustomerRepository customerRepository;
     private BankAccountRepository bankAccountRepository;
     private AccountOperationRepository accountOperationRepository;
@@ -35,6 +49,10 @@ public class BankAccountServiceImpl implements BankAccountService{
 
     @Override
     public CustomerDTO saveCustomer(CustomerDTO customerDTO) {
+<<<<<<< HEAD
+=======
+        log.info("Saving new Customer");
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
         Customer customer=dtoMapper.fromCustomerDTO(customerDTO);
         Customer savedCustomer = customerRepository.save(customer);
         return dtoMapper.fromCustomer(savedCustomer);
@@ -197,4 +215,8 @@ public class BankAccountServiceImpl implements BankAccountService{
         List<CustomerDTO> customerDTOS = customers.stream().map(cust -> dtoMapper.fromCustomer(cust)).collect(Collectors.toList());
         return customerDTOS;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61

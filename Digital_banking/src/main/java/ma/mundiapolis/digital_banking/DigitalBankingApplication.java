@@ -18,6 +18,7 @@ import ma.mundiapolis.digital_banking.services.BankAccountService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 
 import java.util.Date;
@@ -26,6 +27,7 @@ import java.util.UUID;
 import java.util.stream.Stream;
 
 @SpringBootApplication
+@EntityScan(basePackages = "ma.mundiapolis.digital_banking.entities")
 public class DigitalBankingApplication {
 
     public static void main(String[] args) {
@@ -34,7 +36,11 @@ public class DigitalBankingApplication {
     @Bean
     CommandLineRunner commandLineRunner(BankAccountService bankAccountService){
         return args -> {
+<<<<<<< HEAD
             Stream.of("Ayman","Ahmed","Salah").forEach(name->{
+=======
+            Stream.of("Hassan","Imane","Mohamed").forEach(name->{
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
                 CustomerDTO customer=new CustomerDTO();
                 customer.setName(name);
                 customer.setEmail(name+"@gmail.com");
@@ -69,7 +75,11 @@ public class DigitalBankingApplication {
                             BankAccountRepository bankAccountRepository,
                             AccountOperationRepository accountOperationRepository){
         return args -> {
+<<<<<<< HEAD
             Stream.of("Hamza","Ayoub","Youssef").forEach(name->{
+=======
+            Stream.of("Hassan","Yassine","Aicha").forEach(name->{
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
                 Customer customer=new Customer();
                 customer.setName(name);
                 customer.setEmail(name+"@gmail.com");
@@ -109,4 +119,5 @@ public class DigitalBankingApplication {
         };
 
     }
+
 }

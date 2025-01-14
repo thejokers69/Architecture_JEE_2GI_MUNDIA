@@ -40,4 +40,8 @@ public class CustomerRestController {
     public void deleteCustomer(@PathVariable Long id){
         bankAccountService.deleteCustomer(id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61

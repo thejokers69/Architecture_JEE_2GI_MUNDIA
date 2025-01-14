@@ -1,7 +1,10 @@
 package ma.mundiapolis.digital_banking.web;
 
 import ma.mundiapolis.digital_banking.dtos.*;
+<<<<<<< HEAD
 import ma.mundiapolis.digital_banking.entities.BankAccount;
+=======
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
 import ma.mundiapolis.digital_banking.exceptions.BalanceNotSufficientException;
 import ma.mundiapolis.digital_banking.exceptions.BankAccountNotFoundException;
 import ma.mundiapolis.digital_banking.services.BankAccountService;
@@ -13,11 +16,21 @@ import java.util.List;
 @CrossOrigin("*")
 public class BankAccountRestAPI {
     private BankAccountService bankAccountService;
+<<<<<<< HEAD
     public BankAccountRestAPI(BankAccountService bankAccountService) {
         this.bankAccountService = bankAccountService;
     }
     @GetMapping("/account/{accountId}")
     public BankAccountDTO getBankAccount(@PathVariable String accountId) throws BankAccountNotFoundException{
+=======
+
+    public BankAccountRestAPI(BankAccountService bankAccountService) {
+        this.bankAccountService = bankAccountService;
+    }
+
+    @GetMapping("/accounts/{accountId}")
+    public BankAccountDTO getBankAccount(@PathVariable String accountId) throws BankAccountNotFoundException {
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
         return bankAccountService.getBankAccount(accountId);
     }
     @GetMapping("/accounts")

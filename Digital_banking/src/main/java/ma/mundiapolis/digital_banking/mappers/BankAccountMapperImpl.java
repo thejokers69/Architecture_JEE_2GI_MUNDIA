@@ -23,19 +23,34 @@ public class BankAccountMapperImpl {
         BeanUtils.copyProperties(customerDTO,customer);
         return  customer;
     }
+<<<<<<< HEAD
     public SavingBankAccountDTO fromSavingBankAccount(SavingAccount savingAccount) {
         SavingBankAccountDTO savingBankAccountDTO = new SavingBankAccountDTO();
         BeanUtils.copyProperties(savingAccount, savingBankAccountDTO);
+=======
+
+    public SavingBankAccountDTO fromSavingBankAccount(SavingAccount savingAccount){
+        SavingBankAccountDTO savingBankAccountDTO=new SavingBankAccountDTO();
+        BeanUtils.copyProperties(savingAccount,savingBankAccountDTO);
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
         savingBankAccountDTO.setCustomerDTO(fromCustomer(savingAccount.getCustomer()));
         savingBankAccountDTO.setType(savingAccount.getClass().getSimpleName());
         return savingBankAccountDTO;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
     public SavingAccount fromSavingBankAccountDTO(SavingBankAccountDTO savingBankAccountDTO){
         SavingAccount savingAccount=new SavingAccount();
         BeanUtils.copyProperties(savingBankAccountDTO,savingAccount);
         savingAccount.setCustomer(fromCustomerDTO(savingBankAccountDTO.getCustomerDTO()));
         return savingAccount;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
     public CurrentBankAccountDTO fromCurrentBankAccount(CurrentAccount currentAccount){
         CurrentBankAccountDTO currentBankAccountDTO=new CurrentBankAccountDTO();
         BeanUtils.copyProperties(currentAccount,currentBankAccountDTO);
@@ -50,9 +65,17 @@ public class BankAccountMapperImpl {
         currentAccount.setCustomer(fromCustomerDTO(currentBankAccountDTO.getCustomerDTO()));
         return currentAccount;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
     public AccountOperationDTO fromAccountOperation(AccountOperation accountOperation){
         AccountOperationDTO accountOperationDTO=new AccountOperationDTO();
         BeanUtils.copyProperties(accountOperation,accountOperationDTO);
         return accountOperationDTO;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b41595aa1dacb7988d954e12ebed9ce7879b2b61
 }

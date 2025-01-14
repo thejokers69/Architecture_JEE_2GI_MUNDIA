@@ -1,13 +1,16 @@
 package ma.mundiapolis.digital_banking.entities;
 
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
+
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+
 @Entity
-// @DiscriminatorValue("CA")
-@Data @AllArgsConstructor @NoArgsConstructor
-public class CurrentAccount extends  BankAccount{
+@DiscriminatorValue("CURRENT")
+@Data @NoArgsConstructor @AllArgsConstructor
+public class CurrentAccount extends BankAccount {
     private double overDraft;
 }

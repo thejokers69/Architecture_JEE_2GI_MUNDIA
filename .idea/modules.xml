@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Architecture_JEE_2GI_MUNDIA.iml" filepath="$PROJECT_DIR$/.idea/Architecture_JEE_2GI_MUNDIA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Digital_banking/Digital_banking.iml" filepath="$PROJECT_DIR$/Digital_banking/Digital_banking.iml" />
     </modules>
   </component>
 </project>
